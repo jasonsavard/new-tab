@@ -1,0 +1,261 @@
+<html>
+<head>
+    <title>New Tab</title>
+    <style>
+        body {
+            text-align: center;
+            font-size: 20px;
+            background-color: black;
+        }
+        body.flash {
+            transition: background-color 0.3s ease-in-out;
+            background-color: white;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: gray;
+            text-align: center;
+            padding: 14px;
+            border-radius: 5px;
+            transition: all 0.1s ease-out;
+            vertical-align: middle;
+        }
+        #right-side a {
+            padding: 5px 10px;
+        }
+        a:hover {
+            background-color:#222;
+        }
+        a:active {
+            background-color:#444;
+        }
+        img {
+            vertical-align: middle;
+            height: 100px;
+            min-width: 100px;
+        }
+
+        .emoji {
+            display: inline-block;
+            height: 100px;
+            font-size: 75px;
+        }
+
+        @media screen and (max-width: 1280px) {
+            body {zoom: 0.7}
+        }
+    </style>
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div style="display:inline-block;vertical-align:top;width:40%">
+        <div>
+            <a id="startup" href="#">
+                <img src="play.png"/> <!--https://i.imgur.com/d4h2UES.jpg-->
+                <div>Start</div>
+            </a>
+            <a href="https://www.google.com/adsense/app#home">
+                <img src="https://s3.amazonaws.com/images.seroundtable.com/google-adsense-logo-1434711666.png"/>
+                <div>Adsense</div>
+            </a>
+            <a href="https://finance.yahoo.com/portfolio/p_0/view/view_2">
+                <img src="https://www.iconpacks.net/icons/1/free-bar-chart-icon-676-thumb.png"/>
+                <div>Finance</div>
+            </a>
+            <a href="https://apps.jasonsavard.com/admin/analytics.html" style="display:none">
+                <img src="https://cdn3.iconfinder.com/data/icons/e-commerce-8/91/stats-512.png" style="filter:invert()"/>
+                <div>Ext installs</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.theweathernetwork.com/ca/weather/quebec/montreal">
+                <img src="https://s1.twnmm.com/images/en_ca/icons/wxicons_large/2.png"/>
+                <div>Montreal</div>
+            </a>
+            <a href="https://www.theweathernetwork.com/ca/weather/quebec/sainte-marguerite-du-lac-masson">
+                <img src="https://s1.twnmm.com/images/en_ca/icons/wxicons_large/2.png"/>
+                <div>Sainte Marguerite</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/category/home">
+                <img src="chrome-store.webp"/>
+                <div>Chrome Store</div>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.paypal.com/ca/signin">
+                <img src="paypal.png" style="max-width: 200px;height: auto;padding: 20px 0">
+            </a>
+            <a href="https://dashboard.stripe.com/dashboard">
+                <img src="stripe.png" style="filter:invert()"/>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/marketplace/">
+                <svg viewBox="0 0 36 36" class="a8c37x1j ms05siws l3qrxjdp b7h9ocf4" fill="url(#jsc_s_i)" height="80" width="80"><defs><linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_s_i"><stop offset="0%" stop-color="#0062E0"></stop><stop offset="100%" stop-color="#19AFFF"></stop></linearGradient></defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path><path class="p361ku9c" fill="white" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path></svg>
+                <div>Marketplace</div>
+            </a>
+        </div>
+    </div>
+
+    <div id="right-side" style="display: inline-block; text-align: left;">
+
+        <div>
+            <a href="https://jasonsavard.com">
+                <img src="https://jasonsavard.com/images/logo.png"/>
+                <div>Home</div>
+            </a>
+            <a href="https://jasonsavard.com/forum/">
+                <img src="https://jasonsavard.com/images/logo.png"/>
+                <div>Forum</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Main_Page">
+                <img src="https://jasonsavard.com/images/logo.png"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Already_Contributed" class="copy-to-clipboard">
+                <span class="emoji">🔓</span>
+                <div>Already</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Error_logs" class="copy-to-clipboard">
+                <span class="emoji">⚠️</span>
+                <div>Error logs</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Extension_Updates" class="copy-to-clipboard">
+                <span class="emoji">🔃</span>
+                <div>Updates</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Corrupt_browser_profile" class="copy-to-clipboard">
+                <span class="emoji">🩹</span>
+                <div>Corrupt</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Install</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Gmail_changelog">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Changelog</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Gmail">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj/reviews">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Reviews</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/devconsole/151c9ddd-5ec6-436e-a6f8-1cb457a5d4b8/oeopbcgkkoapgobdbedcemjljbihmemj/stats">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Stats</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Auto-detect_sign_in_issues" class="copy-to-clipboard">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Auto-Detect</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Account_sign_in_methods" class="copy-to-clipboard">
+                <img src="http://jasonsavard.com/images/gmailChecker.png"/>
+                <div>Manual add</div>
+            </a>
+        </div>
+    
+        <div>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-google-c/hkhggnncdpfibdhinjiegagmopldibha">
+                <img src="https://lh5.googleusercontent.com/ZTUwa8Snb88bWWNxNfKk6Bg8_P9X47_1A0qWUpQeNN0-VbU5vlDQUWVLYfABoTVQGz11qSRKFw=s128-h128-e365"/>
+                <div>Install</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Google_Calendar_changelog">
+                <img src="https://lh5.googleusercontent.com/ZTUwa8Snb88bWWNxNfKk6Bg8_P9X47_1A0qWUpQeNN0-VbU5vlDQUWVLYfABoTVQGz11qSRKFw=s128-h128-e365"/>
+                <div>Changelog</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Google_Calendar">
+                <img src="https://lh5.googleusercontent.com/ZTUwa8Snb88bWWNxNfKk6Bg8_P9X47_1A0qWUpQeNN0-VbU5vlDQUWVLYfABoTVQGz11qSRKFw=s128-h128-e365"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-google-c/hkhggnncdpfibdhinjiegagmopldibha/reviews">
+                <img src="https://lh5.googleusercontent.com/ZTUwa8Snb88bWWNxNfKk6Bg8_P9X47_1A0qWUpQeNN0-VbU5vlDQUWVLYfABoTVQGz11qSRKFw=s128-h128-e365"/>
+                <div>Reviews</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/devconsole/151c9ddd-5ec6-436e-a6f8-1cb457a5d4b8/hkhggnncdpfibdhinjiegagmopldibha/stats">
+                <img src="https://lh5.googleusercontent.com/ZTUwa8Snb88bWWNxNfKk6Bg8_P9X47_1A0qWUpQeNN0-VbU5vlDQUWVLYfABoTVQGz11qSRKFw=s128-h128-e365"/>
+                <div>Stats</div>
+            </a>
+        </div>
+    
+        <div>
+            <a href="https://chrome.google.com/webstore/detail/capture-explain-and-send/mdddabjhelpilpnpgondfmehhcplpiin">
+                <img src="https://lh6.googleusercontent.com/VqOV5NG7zvJ58jPExpMKx5aa9Rxkty2hmlkp6vHITpEfY3bhVCc8ysn-xeArOyLFVNd6BvZpyA=s128-h128-e365-rw"/>
+                <div>Install</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Explain_and_Send_Screenshots_changelog">
+                <img src="https://lh6.googleusercontent.com/VqOV5NG7zvJ58jPExpMKx5aa9Rxkty2hmlkp6vHITpEfY3bhVCc8ysn-xeArOyLFVNd6BvZpyA=s128-h128-e365-rw"/>
+                <div>Changelog</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Explain_and_Send_Screenshots">
+                <img src="https://lh6.googleusercontent.com/VqOV5NG7zvJ58jPExpMKx5aa9Rxkty2hmlkp6vHITpEfY3bhVCc8ysn-xeArOyLFVNd6BvZpyA=s128-h128-e365-rw"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/capture-explain-and-send/mdddabjhelpilpnpgondfmehhcplpiin/reviews">
+                <img src="https://lh6.googleusercontent.com/VqOV5NG7zvJ58jPExpMKx5aa9Rxkty2hmlkp6vHITpEfY3bhVCc8ysn-xeArOyLFVNd6BvZpyA=s128-h128-e365-rw"/>
+                <div>Reviews</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/devconsole/151c9ddd-5ec6-436e-a6f8-1cb457a5d4b8/mdddabjhelpilpnpgondfmehhcplpiin/stats">
+                <img src="https://lh6.googleusercontent.com/VqOV5NG7zvJ58jPExpMKx5aa9Rxkty2hmlkp6vHITpEfY3bhVCc8ysn-xeArOyLFVNd6BvZpyA=s128-h128-e365-rw"/>
+                <div>Stats</div>
+            </a>
+        </div>
+    
+        <div>
+            <a href="https://chrome.google.com/webstore/detail/webmail-ad-blocker/cbhfdchmklhpcngcgjmpdbjakdggkkjp">
+                <img src="http://jasonsavard.com/images/webmailAdBlocker.png?a=1"/>
+                <div>Install</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Webmail_Ad_Blocker_changelog">
+                <img src="http://jasonsavard.com/images/webmailAdBlocker.png?a=1"/>
+                <div>Changelog</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Webmail_Ad_Blocker">
+                <img src="http://jasonsavard.com/images/webmailAdBlocker.png?a=1"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/webmail-ad-blocker/cbhfdchmklhpcngcgjmpdbjakdggkkjp/reviews">
+                <img src="http://jasonsavard.com/images/webmailAdBlocker.png?a=1"/>
+                <div>Reviews</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/devconsole/151c9ddd-5ec6-436e-a6f8-1cb457a5d4b8/cbhfdchmklhpcngcgjmpdbjakdggkkjp/stats">
+                <img src="http://jasonsavard.com/images/webmailAdBlocker.png?a=1"/>
+                <div>Stats</div>
+            </a>
+        </div>
+
+        <div>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-google-d/pppfmbnpgflleackdcojndfgpiboghga">
+                <img src="https://lh3.googleusercontent.com/UHe9PdP5GyM3wSvOSKc3f1WfssxlPVqPL6gwvbM5mgOAQGJs5BqUhp1oX_SyMXDGJcJA3h-LFA=s128-h128-e365-rw"/>
+                <div>Install</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Google_Drive_changelog">
+                <img src="https://lh3.googleusercontent.com/UHe9PdP5GyM3wSvOSKc3f1WfssxlPVqPL6gwvbM5mgOAQGJs5BqUhp1oX_SyMXDGJcJA3h-LFA=s128-h128-e365-rw"/>
+                <div>Changelog</div>
+            </a>
+            <a href="https://jasonsavard.com/wiki/Checker_Plus_for_Google_Drive">
+                <img src="https://lh3.googleusercontent.com/UHe9PdP5GyM3wSvOSKc3f1WfssxlPVqPL6gwvbM5mgOAQGJs5BqUhp1oX_SyMXDGJcJA3h-LFA=s128-h128-e365-rw"/>
+                <div>FAQ</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/detail/checker-plus-for-google-d/pppfmbnpgflleackdcojndfgpiboghga/reviews">
+                <img src="https://lh3.googleusercontent.com/UHe9PdP5GyM3wSvOSKc3f1WfssxlPVqPL6gwvbM5mgOAQGJs5BqUhp1oX_SyMXDGJcJA3h-LFA=s128-h128-e365-rw"/>
+                <div>Reviews</div>
+            </a>
+            <a href="https://chrome.google.com/webstore/devconsole/151c9ddd-5ec6-436e-a6f8-1cb457a5d4b8/pppfmbnpgflleackdcojndfgpiboghga/stats">
+                <img src="https://lh3.googleusercontent.com/UHe9PdP5GyM3wSvOSKc3f1WfssxlPVqPL6gwvbM5mgOAQGJs5BqUhp1oX_SyMXDGJcJA3h-LFA=s128-h128-e365-rw"/>
+                <div>Stats</div>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
